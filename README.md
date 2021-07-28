@@ -1,4 +1,4 @@
-# Solar connect front-end internship test
+# SolarConnect front-end internship test
 
 ## Sorting Machine
 
