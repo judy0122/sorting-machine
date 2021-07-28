@@ -53,3 +53,10 @@
 - <a href="https://regexr.com/" target="_blank">정규식 테스트</a>
 - 날짜 표기 : <a href="https://day.js.org/" target="_blank">Day.js</a>
 - <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank">자바스크립트 sort 함수</a>
+
+### Start
+
+---
+
+- npm install
+- npm start
