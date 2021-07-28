@@ -4,7 +4,7 @@
 
 - 숫자를 string으로 입력받은 후 오름차순,내림차순으로 정렬하는 소팅기능을 가진 서비스
 
-<img src="./final.gif" width="300px"/>
+<img src="./final.gif" width="500px"/>
 
 ---
 
