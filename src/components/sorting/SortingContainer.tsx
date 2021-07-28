@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Day } from "../commons";
+import { Date } from "../commons";
 import SortingTemplate from "./template/SortingTemplete";
 import SortingResult from "./template/result/SortingResult";
 import useSorting from "./SortingService";
@@ -25,7 +25,7 @@ const SortingContainer: React.FunctionComponent<ISortingContainerProps> = (
 
   return (
     <SortingTemplate>
-      <Day />
+      <Date />
       <SortingForm
         value={value}
         onChange={handleChangeValue}
@@ -33,7 +33,7 @@ const SortingContainer: React.FunctionComponent<ISortingContainerProps> = (
       />
       <SortingResult result={ascending} />
       <SortingResult result={descending} />
-      <Day locale="en" />
+      <Date locale="en" />
     </SortingTemplate>
   );
 };

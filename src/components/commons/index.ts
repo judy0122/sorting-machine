@@ -1,3 +1,3 @@
-import Day from "./Day";
+import Date from "./Date";
 
-export { Day };
+export { Date };
