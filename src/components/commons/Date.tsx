@@ -10,10 +10,9 @@ interface IDateProps {
 
 const DateContainer = styled.div`
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  text-align: center;
-  font-size: 30px;
-  padding: 10px 0;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 0;
 `;
 
 const Date: React.FunctionComponent<IDateProps> = ({

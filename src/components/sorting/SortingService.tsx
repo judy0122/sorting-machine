@@ -1,8 +1,8 @@
 import React from "react";
 
 const useSorting = () => {
-  const [ascending, setAscending] = React.useState<string>("");
-  const [descending, setDescending] = React.useState<string>("");
+  const [ascending, setAscending] = React.useState<string>("-");
+  const [descending, setDescending] = React.useState<string>("-");
 
   const startSorting = (value: string) => {
     const values: number[] = value.split(",").map((x) => parseInt(x));
@@ -13,13 +13,21 @@ const useSorting = () => {
       .toString();
     const newDescending = values.reverse().toString();
     setAscending(newAscending);
-    setDescending(newDescending);
+    setTimeout(() => {
+      setDescending(newDescending);
+    }, 3000);
+  };
+
+  const resetSorting = () => {
+    setAscending("-");
+    setDescending("-");
   };
 
   return {
     ascending,
     descending,
     startSorting,
+    resetSorting,
   };
 };
 

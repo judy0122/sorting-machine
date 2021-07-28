@@ -8,9 +8,12 @@ interface ISortingTemplateProps {
 const SortingTemplateBlock = styled.div`
   width: 500px;
   margin: 0 auto;
-  border: 1px solid #444;
-  padding: 10px;
+
+  padding: 20px;
   box-sizing: border-box;
+  box-shadow: 2px 4px 11px 5px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  border-radius: 30px;
 `;
 
 const SortingTemplate: React.FunctionComponent<ISortingTemplateProps> = ({
