@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# Solar connect front-end internship test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sorting Machine
 
-## Available Scripts
+- 숫자를 string으로 입력받은 후 오름차순,내림차순으로 정렬하는 소팅기능을 가진 서비스
 
-In the project directory, you can run:
+<img src="./final.gif" width="300px"/>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### condition
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. 타이머
 
-### `npm test`
+- [1,6. 타이머]는 재활용이 가능한 Component로 구성합니다.
+- [1. 타이머]는 "ko-KR" 지역시간 표기법으로 나타냅니다.(예> 2021년 7월 20일 화요일)
+- [6. 타이머]는 "en-US" 지역시간 표기법으로 나타냅니다. (예> Tuesday July 20, 2021)
+- 한국 표준시를 기준으로 나타냅니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. 입력
 
-### `npm run build`
+- 사용자의 입력을 받습니다.
+- 입력 데이터의 형식은 "숫자,숫자,숫자..." 입니다. 예> 1,3,2,4
+- 잘못된 형식의 입력데이터는 예외처리하여 사용합니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. 시작
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 사용자가 버튼을 누르면 소팅이 시작됩니다.
+- [4. 결과 필드]에 바로 노출 되고 3초 후에 [5.결과 필드]에 결과가 노출됩니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. 결과
 
-### `npm run eject`
+- 결과 데이터의 형식은 "숫자, 숫자, 숫자..." 입니다. 예> 1, 2, 3, 4
+- [4. 결과 필드]에서는 오름차순의 결과를 나타냅니다.
+- [5. 결과 필드]에서는 내림차순의 결과를 나타냅니다.
+- 알고리즘은 소팅알고리즘을 사용하지 않고, 자신이 구현 할 수 있는 정렬의 방법으로 직접 구현합니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. 기타 조건
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ReactJS로 구현하세요.
+- 과제를 위한 추가적인 패키지 설치는 자유입니다.
+- 레이아웃은 그림을 참고하되, UI 및 UX는 작성자 편의에 맞게 구현하세요.
+- 상기 조건을 제외한 모든 부분들은 작성자 편의에 맞게 구현하세요.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 추가기능
 
-## Learn More
+- reset button
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 참고사이트
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- <a href="https://regexr.com/" target="_blank">정규식 테스트</a>
+- 날짜 표기 : <a href="https://day.js.org/" target="_blank">Day.js</a>
+- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank">자바스크립트 sort 함수</a>
