@@ -36,8 +36,8 @@ const useSorting = () => {
     const right: number[] = array.slice(middleIdx);
 
     return isAscend
-      ? sortAscending(sliceArray(left, isAscend), sliceArray(right, isAscend))
-      : sortDescending(sliceArray(left, isAscend), sliceArray(right, isAscend));
+      ? sortAscending(mergeSort(left, isAscend), mergeSort(right, isAscend))
+      : sortDescending(mergeSort(left, isAscend), mergeSort(right, isAscend));
   };
 
   const startSorting = (value: string) => {
